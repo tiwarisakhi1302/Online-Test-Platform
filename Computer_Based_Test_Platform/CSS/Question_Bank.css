@@ -188,11 +188,11 @@
     border-radius: 10px;
     position: absolute;
     border-style: dotted dashed solid double;
-    /* font-size:25px; */
-    width: 800px;
+    font-size:25px;
+    width: 900px;
     height: 200px;
-    left: 64%;
-    top: 18%;
+    left: 33%;
+    top: 16%;
     z-index: 1;
     display: flex;
     flex-direction: column;
