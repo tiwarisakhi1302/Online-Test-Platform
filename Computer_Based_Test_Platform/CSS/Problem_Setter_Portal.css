@@ -122,34 +122,59 @@
   opacity: .24;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
 
 }
-body{
+
+body {
   overflow: hidden;
 
 }
-#Nav_bar{
+
+#Nav_bar {
   padding: 20px 0;
+
   background-image: linear-gradient(92.83deg, #ff7426 0, #f93a13 100%);
-  text-align: center;
+  /* text-align: center; */
   box-shadow: 0 0 10px 0 rgba();
-  color:azure;
+  color: azure;
+  height: 50px;
+  display: flex;
 }
 
-/* #Add_Question
-{
-    border-radius: 20px;
+#heading {
+  margin-left: 35%;
+  position: absolute;
+  width: 800px;
 }
 
-#Question_bank_btn
-{
-    border-radius: 20px;
+#logout_box_table {
+  position: absolute;
+  background-color: rgba(128, 128, 128, 0.379);
+  border: 1px solid;
+  border-radius: 10px;
+  width: 240px !important;
+  height: 50px;
+  font-size: 22px;
+  right: 21px;
+  justify-content: center;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  justify-self: flex-end;
+  margin-left: 5px;
+
 }
 
-#Create_test_btn
-{
-    border-radius: 20px;
-} */
+#Logout_btn {
+  border-radius: 25px;
+  background-image: linear-gradient(92.83deg, #ff762663 0, #f939136a 100%);
+}
+
+#logged_in_as,
+#Logout_btn {
+  justify-self: center;
+  align-self: center;
+}
