@@ -1,15 +1,25 @@
 <html>
+
 <head>
     <title>TEST PORTAL</title>
 </head>
+
 <body>
-    <link rel="stylesheet" href="CSS/CommonCSS.css">
+    <!-- <link rel="stylesheet" href="CSS/CommonCSS.css"> -->
     <link rel="stylesheet" href="CSS/Test_Platform.css">
-    <div id="Top_Bar"> <h2 style="text-align:center ; padding-top: 15px;"> TEST PORTAL</h2></div>
-    
+    <div id="Top_Bar" class="Nav_bar">
+        <h1 id="heading" style="text-align:center ; "> TEST PORTAL</h1>
+    </div>
+
     <div id="Welcome_box">
         <table id="logout_box_table">
-            <tr><td> <img src="GUI_Resources/user_ui2.png" height="40px"> </td> <td> <p id="logged_in_as"></p> </td>  <td> <button id="Logout_btn" style = " width: 80px ; height: 30px ;">Logout</button> </td>  </tr>
+            <tr>
+                <td> <img src="GUI_Resources/user_ui2.png" height="40px"> </td>
+                <td>
+                    <p id="logged_in_as"></p>
+                </td>
+                <td> <button id="Logout_btn" style=" width: 80px ; height: 30px ;">Logout</button> </td>
+            </tr>
         </table>
     </div>
 
@@ -19,24 +29,42 @@
 
     <div id="Question_details" hidden> <!-- Question Details Div -->
         <table id="Question_Details_table">
-            <tr><td colspan="2" style="text-align:center; background-color: #28ff287e;"> <div style="text-align:center;"><span> Marks : </span> <span id="Marks"></span></div> </td></tr>
-            <tr><td style="text-align:center;" colspan="2" id="Question_Description"></td></tr>
-            <tr><td width="30px"><input type="radio" name="options" id="option_1_radio"></td><td style="text-align:left;" id="Option1"></td></tr>
-            <tr><td><input type="radio" name="options" id="option_2_radio"></td><td id="Option2" style="text-align:left;"></td></tr>
-            <tr><td><input type="radio" name="options" id="option_3_radio"></td><td id="Option3" style="text-align:left;"></td></tr>
-            <tr><td><input type="radio" name="options" id="option_4_radio"></td><td id="Option4" style="text-align:left;"></td></tr>
-            
+            <tr id="t_p">
+                <td id="t_p1" colspan="2" style="text-align:center;  background-image: linear-gradient(92.83deg, #ff7426 0, #f939139a 100%);">
+                    <div style="text-align:center;"><span> Question</span></div>
+                </td>
+            </tr>
+            <tr>
+                <td style="font-size: 20px; text-align:center; background-color: #f2684ddf; " colspan="2" id="Question_Description"></td>
+            </tr>
+            <tr>
+                <td width="30px"><input type="radio" name="options" id="option_1_radio" ></td>
+                <td  style="text-align:left ; font-size: 19px;" id="Option1"></td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="options" id="option_2_radio"></td>
+                <td id="Option2" style="text-align:left;font-size: 19px;"></td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="options" id="option_3_radio"></td>
+                <td id="Option3" style="text-align:left; font-size: 19px;"></td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="options" id="option_4_radio"></td>
+                <td id="Option4" style="text-align:left; font-size: 19px;"></td>
+            </tr>
+
         </table>
     </div>
 
     <div id="timer_div">
-       <span>Time Remaining (secs): </span> <span id="timer"></span>
+        <span>Time Remaining (secs): </span> <span id="timer"></span>
     </div>
 
     <div id="right_bar"> <!--Right question pallet bar -->
         <div id="Question_Pallet">
             <table id="Question_Pallet_table">
-                
+
             </table>
         </div>
     </div>
@@ -45,8 +73,13 @@
     <div id="Start_Test_Overlay" hidden>
         <div id="Start_test_Confirmation_div">
             <table id="Start_test_Confirmation_table">
-                <tr><td colspan="2" id="">Start_Test?</td></tr>
-                <tr><td><button id="Start_test_Confirmation_ans_no">NO</button></td><td><button id="Start_test_Confirmation_ans_yes">YES</button></td></tr>
+                <tr>
+                    <td colspan="2" id="">Start_Test?</td>
+                </tr>
+                <tr>
+                    <td><button class="button-77" id="Start_test_Confirmation_ans_no">NO</button></td>
+                    <td><button class="button-77" id="Start_test_Confirmation_ans_yes">YES</button></td>
+                </tr>
             </table>
         </div>
     </div>
@@ -55,28 +88,39 @@
     <div id="Resume_Test_Overlay" hidden>
         <div id="Resume_Test_Confirmation_div">
             <table id="Resume_Test_Confirmation_table">
-                <tr><td colspan="2" id="">Resume Test?</td></tr>
-                <tr><td><button id="Resume_Test_Confirmation_ans_no">NO</button></td><td><button id="Resume_Test_Confirmation_ans_yes">YES</button></td></tr>
+                <tr>
+                    <td colspan="2" id="">Resume Test?</td>
+                </tr>
+                <tr>
+                    <td><button class="button-77" id="Resume_Test_Confirmation_ans_no">NO</button></td>
+                    <td><button class="button-77" id="Resume_Test_Confirmation_ans_yes">YES</button></td>
+                </tr>
             </table>
         </div>
     </div>
-    
+
 
     <div id="Overlay_for_submission" hidden>
         <div id="submission_confirmation_div">
             <table id="submission_confirmation_table">
-                <tr><td colspan="2">Submit Test?</td></tr>
-                <tr><td><button id="submit_no">NO</button></td><td><button id="submit_yes">YES</button></td></tr>
+                <tr>
+                    <td colspan="2" style="font-size:24px">Submit Test?</td>
+                </tr>
+                <tr>
+                    <td><button class="button-77" id="submit_no">NO</button></td>
+                    <td><button class="button-77" id="submit_yes">YES</button></td>
+                </tr>
             </table>
         </div>
     </div>
 
     <div>
-        <button id="Submit_Test_btn">Submit Test</button>
+        <button class="button-77" id="Submit_Test_btn">Submit Test</button>
     </div>
 
     <!-- importing js cookie CDN library -->
-<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>  
-<script type="module" src="Scripts/Test_Platform.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <script type="module" src="Scripts/Test_Platform.js"></script>
 </body>
+
 </html>

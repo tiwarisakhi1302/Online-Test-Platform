@@ -19,9 +19,9 @@
 {
     position: absolute;
     top:45%;
-    left: 44%;
-    width: 12%;
-    height: 8%;
+    left: 38%;
+    width: 430px;
+    height: 120px;
     text-align: center;
     background-color: azure;
     border-radius: 25px;
@@ -30,10 +30,11 @@
 #Start_test_Confirmation_table
 {
     position: absolute;
-    text-align: center;
-    top: 18%;
-    left: 28%;
-}
+        /* text-align: center; */
+        top: 18%;
+        left: 18%;
+        right: 0;
+    }
 
 #Resume_Test_Overlay
 {
@@ -70,10 +71,11 @@
 /*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 
-#Question_Details_table td
+#t_p,#t_p1
 {
-    /* border: 2px solid black; */
-    border-radius: 20px;
+    font-size: 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
 }
 /*----------------------------------------------------Load Overlay--------------------------------------------------------*/
 
@@ -114,9 +116,9 @@
 {
     position: absolute;
     top:45%;
-    left: 44%;
-    width: 12%;
-    height: 8%;
+    left: 39%;
+    width: 330px;
+    height: 130px;
     text-align: center;
     background-color: azure;
     border-radius: 25px;
@@ -127,7 +129,7 @@
     position: absolute;
     text-align: center;
     top: 18%;
-    left: 28%;
+    left: 20%;
 }
 
 /*-----------------------------------------------------------------------------Right Question Pallet-----------------------------------------*/
@@ -138,10 +140,12 @@
 {
    width: 45px;
    height: 45px;
+   border-radius: 15px;
 }
 
 #Question_Pallet
 {
+
     position: relative;
     width: 252px;
     top : 30%;
@@ -151,9 +155,10 @@
 
 #right_bar
 {
-    border-radius: 10px;
+    border-radius: 18px;
     position: absolute;
-    border-style: dotted dashed solid double;
+    /* border-style: ; */
+    box-shadow: 0 0 10px 0;
     width: 340px;
     padding-top: 2%;
     top: 20%;
@@ -163,7 +168,7 @@
     flex-direction: column;
     min-height: 70vh;
     overflow: auto;
-    background-color:#c2ffc27e
+    background-color:rgba(255, 255, 255, 0.204);
 }
 
 /*------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -179,7 +184,7 @@
 {
     width: 700px;
     height: 400px;
-    background-color: #c2ffc27e;
+    background-color: #747474;
     border-radius: 20px;
 }
 
@@ -193,7 +198,7 @@
 
 #timer_div
 {
-    background-color: aliceblue;
+    background-color: white;
     width: 300px;
     height: 30px;
     position: absolute;
@@ -206,9 +211,161 @@
 #Submit_Test_btn
 {
     position: absolute;
-    top: 2.5%;
+    top: -6%;
     left: 85%;
     height: 30px;
     width: 200px;
+}
+
+#Welcome_box {
+    display: none;
+    visibility: hidden;
+    text-align: center;
+    width: fit-content;
+    padding: 5px;
+    border: dotted black 2px;
+    background-color: rgba(235, 255, 255, 0.356);
+    border-radius: 9px;
+    width: 350px;
+    height: 50px;
+    right: 1%;
+    top: 9%;
+    position: absolute;
+    text-align: center;
+    display: hidden;
+}
+
+#logout_box_table td {
+    width: 20%;
+}
+
+#logout_box_table {
+    display: hidden;
+    position: absolute;
+    text-align: center;
+    width: fit-content;
+}
+
+body {
+    overflow: hidden;
+    background-color: black;
+
+}
+
+.Nav_bar {
+
+    padding: 20px 0;
+    top: 0%;
+    position: absolute;
+    width: 100%;
+    justify-content: center ;
+    background-image: linear-gradient(92.83deg, #ff7426 0, #f939139a 100%);
+    box-shadow: 0 0 10px 0 rgba();
+    color: azure;
+    height: 40px;
+    display: flex;
+}
+#heading{
+    margin-top: -5px;
+}
+.button-77 {
+    align-items: center;
+    appearance: none;
+    background-clip: padding-box;
+    background-color: initial;
+    background-image: none;
+    border-style: none;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    flex-direction: row;
+    flex-shrink: 0;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    justify-content: center;
+    line-height: 24px;
+    margin: 3%;
+    min-height: 64px;
+    outline: none;
+    overflow: visible;
+    padding: 19px 26px;
+    pointer-events: auto;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    width: auto;
+    word-break: keep-all;
+    z-index: 0;
+}
+
+@media (min-width: 768px) {
+    .button-77 {
+        padding: 19px 32px;
+    }
+}
+
+.button-77:before,
+.button-77:after {
+    border-radius: 80px;
+}
+
+.button-77:before {
+    background-color: rgba(249, 58, 19, .32);
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -2;
+}
+
+.button-77:after {
+    background-color: initial;
+    background-image: linear-gradient(92.83deg, #ff7426 0, #f93a13 100%);
+    bottom: 4px;
+    content: "";
+    display: block;
+    left: 4px;
+    overflow: hidden;
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    transition: all 100ms ease-out;
+    z-index: -1;
+}
+
+.button-77:hover:not(:disabled):after {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    transition-timing-function: ease-in;
+}
+
+.button-77:active:not(:disabled) {
+    color: #ccc;
+}
+
+.button-77:active:not(:disabled):after {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), linear-gradient(92.83deg, #ff7426 0, #f93a13 100%);
+    bottom: 4px;
+    left: 4px;
+    right: 4px;
+    top: 4px;
+}
+
+.button-77:disabled {
+    cursor: default;
+    opacity: .24;
 }
 
