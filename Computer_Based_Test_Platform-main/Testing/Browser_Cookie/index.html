@@ -1,0 +1,15 @@
+<html>
+<head>
+    <title>Cookies</title>
+</head>
+<body>
+    <p>testing cookies</p> 
+</body>
+<script>
+    document.cookie = "name = saksham";
+    var cookies = document.cookie.split(';').map(cookie => cookie.split("=")).reduce((accumulator,[key,value]) => ({...accumulator,[key.trim()] : decodeURIComponent(value)}));
+
+    console.log(cookies.name);
+    console.log(cookies.age == undefined);
+</script>
+</html>

@@ -1,0 +1,89 @@
+<html>
+<head>
+    <title>Problem Setter Portal</title>
+</head>
+<body>
+    <link rel="stylesheet" href="CSS/CommonCSS.css">
+    <link rel="stylesheet" href="CSS/Add_Question.css">
+    <div id="Top_Bar"> <h2 style="text-align:center ; padding-top: 15px;"> ADD QUESTION </h2></div>
+    <div id="Welcome_box">
+        <table id="logout_box_table">
+            <tr><td> <img src="GUI_Resources/user_ui2.png" height="40px"> </td> <td> <p id="logged_in_as"></p> </td>  <td> <button id="Logout_btn" style = " width: 80px ; height: 30px ;">Logout</button> </td>  </tr>
+        </table>
+    </div>
+
+    <section>
+        <div class="leaf">
+            <div> <img src="http://www.pngmart.com/files/1/Fall-Autumn-Leaves-Transparent-PNG.png" height="75px"
+                    width="75px"></img></div>
+            <div><img src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Pictures-Collage-PNG.png" height="75px"
+                    width="75px"></img></div>
+            <div> <img src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Clip-Art-PNG.png" height="75px"
+                    width="75px"></img></div>
+            <div><img src="http://www.pngmart.com/files/1/Green-Leaves-PNG-File.png" height="75px" width="75px"></img>
+            </div>
+            <div> <img src="http://www.pngmart.com/files/1/Transparent-Autumn-Leaves-Falling-PNG.png" height="75px"
+                    width="75px"></img></div>
+            <div> <img src="http://www.pngmart.com/files/1/Realistic-Autumn-Fall-Leaves-PNG.png" height="75px"
+                    width="75px"></div>
+            <div><img src="http://www.pngmart.com/files/1/Fall-Autumn-Leaves-Transparent-PNG.png" height="75px" width="75px"></div>
+
+        </div>
+
+        <div class="leaf leaf1">
+            <div> <img src="http://www.pngmart.com/files/1/Fall-Autumn-Leaves-Transparent-PNG.png" height="75px"
+                    width="75px"></img></div>
+            <div><img src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Pictures-Collage-PNG.png" height="75px"
+                    width="75px"></img></div>
+            <div> <img src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Clip-Art-PNG.png" height="75px"
+                    width="75px"></img></div>
+            <div><img src="http://www.pngmart.com/files/1/Green-Leaves-PNG-File.png" height="75px" width="75px"></img>
+            </div>
+            <div> <img src="http://www.pngmart.com/files/1/Transparent-Autumn-Leaves-Falling-PNG.png" height="75px"
+                    width="75px"></img></div>
+            <div> <img src="http://www.pngmart.com/files/1/Realistic-Autumn-Fall-Leaves-PNG.png" height="75px"
+                    width="75px"></div>
+            <div><img src="http://www.pngmart.com/files/1/Fall-Autumn-Leaves-Transparent-PNG.png" height="75px" width="75px"></div>
+
+        </div>
+
+        <div class="leaf leaf2">
+            <div> <img src="http://www.pngmart.com/files/1/Fall-Autumn-Leaves-Transparent-PNG.png" height="75px"
+                    width="75px"></img></div>
+            <div><img src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Pictures-Collage-PNG.png" height="75px"
+                    width="75px"></img></div>
+            <div> <img src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Clip-Art-PNG.png" height="75px"
+                    width="75px"></img></div>
+            <div><img src="http://www.pngmart.com/files/1/Green-Leaves-PNG-File.png" height="75px" width="75px"></img>
+            </div>
+
+            <div> <img src="http://www.pngmart.com/files/1/Transparent-Autumn-Leaves-Falling-PNG.png" height="75px"
+                    width="75px"></img></div>
+            <div> <img src="http://www.pngmart.com/files/1/Realistic-Autumn-Fall-Leaves-PNG.png" height="75px"
+                    width="75px"></div>
+            <div><img src="http://www.pngmart.com/files/1/Fall-Autumn-Leaves-Transparent-PNG.png" height="75px" width="75px"></div>
+
+        </div>
+    </section>
+
+    <div id="Add_Question_Pallet_Container">
+            <table id="Add_Question_pallet">
+                <thead><th colspan="3" style="text-align: center;"> <img src="GUI_Resources/Question_icon.png" alt=""> </th></thead>
+                <tr id="Authored_By_row"><td> Authored By - </td> <td> <input type="radio" name="authored_by" id="Authored_by_me" checked> <span id="my_name"></span> </td><td><input type="radio" name="authored_by" id="Authored_by_anonymous"> Anonymous </td></tr>
+                <tr id="Difficulty_scale_row"><td>Difficulty Scale : </td> <td> <span>1</span> <input id="Difficulty_Slider" type="range" min="1" max="10"> <span>10</span>  <td>Current Difficulty : <span id="current_difficulty">6</span> </td></tr>
+                <tr><td>Subject : </td> <td colspan="2"> <input type="radio" name="choice" id="sub_Algorithm" checked> Algorithm  <input type="radio" name="choice" id="sub_Automata"> Automata  <input type="radio" name="choice" id="Sub_OS"> Operating System </td> </tr>
+                <tr><td colspan="3">Question Description</td></tr>
+                <tr><td colspan="3"><textarea name="" id="ques_desc" style="resize: none;"></textarea></td></tr>
+                <tr><td> Option 1</td> <td colspan="2"> <textarea style="resize: none" name="" id="mcq_option1_value"></textarea></td></tr>
+                <tr><td> Option 2</td> <td colspan="2"> <textarea style="resize: none;" name="" id="mcq_option2_value"></textarea></td></tr>
+                <tr><td> Option 3</td> <td colspan="2"> <textarea style="resize: none" name="" id="mcq_option3_value"></textarea></td></tr>
+                <tr><td> Option 4</td> <td colspan="2"> <textarea style="resize: none" name="" id="mcq_option4_value"></textarea></td></tr>
+                <tr id="correct_ans_row"><td style="color:black"> Correct Answer : </td> <td colspan="2" style="color:black"> <input type="radio" name="correct_opt" id="correct_opt_1" checked> option1 <input type="radio" name="correct_opt" id="correct_opt_2"> option2  <input type="radio" name="correct_opt" id="correct_opt_3"> option3 <input type="radio" name="correct_opt" id="correct_opt_4"> option4 </td> </tr>
+                <tr><td colspan="3" style="text-align: center;"><button class="button-77" id="Submit_Question">Submit Question</button></td></tr>
+            </table>
+    </div>
+        <!-- importing js cookie CDN library -->
+        <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+        <script type="module" src="Scripts/Add_Question.js"></script>
+</body>
+</html>

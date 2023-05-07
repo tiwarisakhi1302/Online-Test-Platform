@@ -1,0 +1,161 @@
+.Student_table th /*CSS for Student table heading */
+{
+    width: 300px;
+    border: solid;
+    border-color: black;
+    border-width: 1px;
+    text-align: center;
+    background-color: rgba(240, 248, 255, 0.582);
+    border-radius: 30px;
+}
+
+/* ---------------------------------------For Delete Confirmation  -------------------------------*/
+
+#Overlay  /* For Delete Confirmation overlay div */
+{
+  height: 100%;
+  width: 100%;
+  z-index: 3;
+  position: fixed; /* Stay in place */
+  left: 0;
+  top: 0;
+  background-color: rgba(7, 7, 7, 0.55); /* Black w/opacity */
+  backdrop-filter: blur(6px);
+}
+
+#confirmation_div /* For Delete Confirmation div (that contains table ) */
+{
+    position: absolute;
+    top:45%;
+    left: 44%;
+    width: 12%;
+    height: 8%;
+    text-align: center;
+    background-color: azure;
+    border-radius: 25px;
+}
+
+#confirmation_table /* For Delete Confirmation table that contains text and yes/no buttons */
+{
+    position: absolute;
+    top: 20%;
+    left: 8%;
+}
+
+/*---------------------------------------------------------------------------------------------------------*/
+
+.Problem_Setter_table th /*CSS for Problem Setter Table Heading */
+{
+    width: 300px;
+    border: solid;
+    border-color: black;
+    border-width: 1px;
+    text-align: center;
+    background-color: rgba(240, 248, 255, 0.3);
+    border-radius: 30px;
+}
+
+.Student_table tr /*CSS for Student table Rows */
+{
+    width: 300px;
+    border: solid;
+    border-color: black;
+    border-width: 0px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgba(240, 248, 255, 0.37);
+}
+
+.Problem_Setter_table tr  /*CSS for Problem Setter Table Rows */
+{
+    width: 300px;
+    border: solid;
+    border-color: black;
+    border-width: 0px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgba(240, 248, 255, 0.37);
+}
+
+/*--------------------------------------------CSS for Loading Overlay-----------------------------------------*/
+#loading_img  /*CSS for loading image */
+{
+    position: absolute;
+    top: 43%;
+    left: 43%;
+}
+ 
+#Load_overlay /*CSS for load overlay div */
+{
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+    position: fixed; /* Stay in place */
+    left: 0;
+    top: 0;
+    background-color: rgba(7, 7, 7, 0.55); /* Black w/opacity */
+    backdrop-filter: blur(6px);
+}
+
+/*----------------------------------------------------------------------------------------------------------------*/
+
+#table_divs  /*CSS for Div which contains both tables*/
+{
+    width: 1000px;
+    position: absolute;
+    text-align: center;
+    right: 40%;
+    top: 25%;
+    /* border: dotted black 2px; */
+}
+
+#Admin_Banner_div
+{
+    z-index: 1;
+    position: absolute;
+    left: 47%;
+    top: 8%;
+}
+
+#Current_edit_div /*CSS for Current edit table DIV container*/
+{
+    position: absolute;
+    width: 400px;
+    height: 240px;
+    left: 75%;
+    top: 25%;
+    background-color: rgba(240, 248, 255, 0.3);
+    border: dotted black 3px; 
+    border-radius: 15px;   
+}
+
+#Current_Edit_table  /*CSS for Current edit table*/
+{
+    width: 360px;
+    position: absolute;
+    left: 5%;
+    top: 10%;
+}
+
+
+#Current_Edit_table td /*CSS for Current edit table data cell*/
+{
+    /* border: solid black 1px;  */
+    padding: 2%; 
+}
+
+#Register_User_table td /*CSS for RegisteR User table data cell*/
+{
+    /* border: solid black 2px;   */
+    padding: 20px;
+}
+
+#Register_User_table  /*CSS for RegisteR User table */
+{
+    background-color: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    top: 55%;
+    left: 76%;
+    border: dotted black 3px; 
+    border-radius: 30px;
+}

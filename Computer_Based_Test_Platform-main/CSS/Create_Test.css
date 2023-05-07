@@ -1,0 +1,128 @@
+#Create_Test_Table
+{
+    background-color: rgba(240, 248, 255, 0.582);
+    border: solid black 3px; 
+}
+
+#Create_Test_div
+{
+    position: absolute;
+    top :15%;
+    left: 42%;
+}
+
+
+#Question_Added_table_div
+{
+    position: absolute;
+    top : 25%;
+    left : 72%;
+}
+
+#fetch_question_bank /* For Fetch Question Bank Button*/
+{
+    position: absolute;
+    left: 10%;
+    top: 15%;
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+}
+
+#Question_Added_table
+{
+    background-color: rgba(240, 248, 255, 0.582);
+    border: solid black 3px; 
+    width: 400px;
+    text-align: center;
+}
+
+#Question_to_add_MCQ_div
+{
+    border-radius: 10px;
+    position: absolute;
+    border-style: dotted dashed solid double;
+    width: 450px;
+    height: 200px;
+    margin-left: 2%;
+    margin-top: 8%;
+    z-index: 1;  
+    display: flex;
+    flex-direction: column;
+    min-height: 57vh;
+    overflow: auto;
+    background-color:#e8e0d77e
+}
+
+#Question_to_add_MCQ_table
+{
+    position: relative;
+    left: 5%;
+    top : 5%;
+    background-color: rgba(240, 248, 255, 0.582);
+    border: solid black 3px; 
+    width: 400px;
+    text-align: center;
+}
+
+
+#loading_img  /*CSS for loading image */
+{
+    position: absolute;
+    top: 43%;
+    left: 43%;
+}
+ 
+#Load_overlay /*CSS for load overlay div */
+{
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+    position: fixed; /* Stay in place */
+    left: 0;
+    top: 0;
+    background-color: rgba(7, 7, 7, 0.55); /* Black w/opacity */
+    backdrop-filter: blur(6px);
+}
+
+#Question_pallet_table
+{
+    background-color: rgba(240, 248, 255, 0.582);
+    border: solid black 3px; 
+}
+
+#Question_pallet_table_div
+{
+    position: absolute;
+    top : 28%;
+    left: 29%;
+}
+
+.add_question_btn
+{
+    background-color:rgba(0, 255, 255, 0);
+    border: 0px;
+}
+
+#Description_Overlay /*Overlay for Displaying details of the seleted question */
+{
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+    position: fixed; /* Stay in place */
+    left: 0;
+    top: 0;
+    background-color: rgba(7, 7, 7, 0.55); /* Black w/opacity */
+    backdrop-filter: blur(6px);
+}
+
+
+#create_Test
+{
+    position: absolute;
+    top: 30%;
+    left: 45%;
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+}

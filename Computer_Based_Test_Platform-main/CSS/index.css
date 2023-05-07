@@ -1,0 +1,121 @@
+
+#Login_box  /*  For login table holder div  */
+{
+   position: absolute;
+   border: solid;
+   border-radius: 30px;
+   left: 36%;
+   top: 30%;
+   width: 700px;
+   height: 350px;
+   padding: 20px;
+   color: #fff;
+   /* background-color: rgba(255, 255, 255, 0.493); */
+}
+
+
+.input-container{
+	position:relative;
+	margin-bottom:25px;
+}
+
+.input-container label{
+	position:absolute;
+	top:0px;
+	left:0px;
+	font-size:16px;
+	color:#fff;
+  pointer-event:none;
+	transition: all 0.5s ease-in-out;
+}
+.input-container input{
+  border:0;
+  border-bottom:1px solid #555;
+  background:transparent;
+  width:100%;
+  padding:8px 0 5px 0;
+  font-size:16px;
+  color:#fff;
+}
+.input-container input:focus{
+ border:none;
+ outline:none;
+ border-bottom:1px solid #e74c3c;
+}
+
+.input-container input:focus ~ label,
+.input-container input:valid ~ label{
+	top:-12px;
+	font-size:12px;
+
+}
+
+
+#login_table tr,#login_table td /*  For login table row and data cell  */
+{
+    /* margin: 20px; */
+    padding: 10px;
+    color:#fff;
+    font-size: larger;
+}
+
+/* #login_button
+/* {
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+} */
+
+button {
+    --c:  #E95A49; /* the color*/
+
+    box-shadow: 0 0 0 .1em inset var(--c);
+    --_g: linear-gradient(var(--c) 0 0) no-repeat;
+    background:
+      var(--_g) calc(var(--_p,0%) - 100%) 0%,
+      var(--_g) calc(200% - var(--_p,0%)) 0%,
+      var(--_g) calc(var(--_p,0%) - 100%) 100%,
+      var(--_g) calc(200% - var(--_p,0%)) 100%;
+    background-size: 50.5% calc(var(--_p,0%)/2 + .5%);
+    outline-offset: .1em;
+    transition: background-size .4s, background-position 0s .4s;
+  }
+  button:hover {
+    --_p: 100%;
+    transition: background-position .4s, background-size 0s;
+  }
+  button:active {
+    box-shadow: 0 0 9e9q inset #0009;
+    background-color: var(--c);
+    color: #fff;
+  }
+
+button {
+    font-family: system-ui, sans-serif;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: .1em .6em;
+    font-weight: bold;
+    border: none;
+    color: white;
+    margin-left: 150px;
+  }
+
+#loading_img  /*CSS for loading image */
+{
+    position: absolute;
+    top: 43%;
+    left: 43%;
+}
+
+#Load_overlay /*CSS for load overlay div */
+{
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+    position: fixed; /* Stay in place */
+    left: 0;
+    top: 0;
+    background-color: rgba(7, 7, 7, 0.55); /* Black w/opacity */
+    backdrop-filter: blur(6px);
+}

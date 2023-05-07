@@ -1,0 +1,35 @@
+
+
+/*---------------------------------------------------------------------------------Load Overlay CSS ---------------------------------------------------------------*/
+
+#loading_img  /*CSS for loading image */
+{
+    position: absolute;
+    top: 43%;
+    left: 43%;
+}
+ 
+#Load_overlay /*CSS for load overlay div */
+{
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+    position: fixed; /* Stay in place */
+    left: 0;
+    top: 0;
+    background-color: rgba(7, 7, 7, 0.55); /* Black w/opacity */
+    backdrop-filter: blur(6px);
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+#Test_Data_Table
+{
+    position: absolute;
+    top:25%;
+    left: 28%;
+    width: 42%;
+    text-align: center;
+    background-color: rgba(240, 255, 255, 0.747);
+    border-radius: 25px;
+}

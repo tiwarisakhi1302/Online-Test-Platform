@@ -1,0 +1,45 @@
+<html>
+<head>
+    <title>User Auth Testing</title>
+</head>
+
+<body>
+    email : <input type="text" id="email"> <br>
+    password : <input type="password" id="password"> <br>
+    <button>Sign In</button>
+</body>
+<script src="https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.10.0/firebase-database.js"></script>
+<script>
+    
+    const firebaseConfig = {
+    apiKey: "AIzaSyBGO2UxeDnFQCdpPSAEZN7OBdmPMmtULto",
+    authDomain: "authtesting-aa5f5.firebaseapp.com",
+    projectId: "authtesting-aa5f5",
+    storageBucket: "authtesting-aa5f5.appspot.com",
+    messagingSenderId: "881247471237",
+    appId: "1:881247471237:web:e60e1afa42e599b9628bec"
+  };
+  const app = initializeApp(firebaseConfig);
+
+
+  //-----------------------Refrences-------------------------------
+  email_input = document.getElementById("email");
+  password_input = document.getElementById("password");
+
+  function Sign_in()
+  {
+    auth.signInWithEmailAndPassword()
+    .then(function(){
+        var user = auth.currentUser; //getting current user to user variable
+        
+
+    })
+    .catch(function(){
+
+    })
+  }
+
+</script>
+</html>

@@ -1,0 +1,54 @@
+/*----------------------------------------------------Load Overlay--------------------------------------------------------*/
+
+#loading_img  /*CSS for loading image */
+{
+    position: absolute;
+    top: 43%;
+    left: 43%;
+}
+ 
+#Load_overlay /*CSS for load overlay div */
+{
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+    position: fixed; /* Stay in place */
+    left: 0;
+    top: 0;
+    background-color: rgba(7, 7, 7, 0.55); /* Black w/opacity */
+    backdrop-filter: blur(6px);
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------*/
+
+#Result_Table
+{
+    width: 900px;
+    background-color: #c2ffc27e;
+    border-radius: 20px;
+    position: relative;
+    left: 2%;
+}
+
+#Result_Table_Holder_Div
+{
+    border-radius: 10px;
+    position: relative;
+    top: 5%;
+    left: 23%;
+    border-style: dotted dashed solid double;
+    width: 940px;
+    padding-top: 2%;
+    
+    z-index: 0;  
+    display: flex;
+    flex-direction: column;
+    min-height: 70vh;
+    overflow: auto;
+    background-color:#c2ffc27e
+}
+
+#Result_Table td
+{
+    text-align: center;
+}

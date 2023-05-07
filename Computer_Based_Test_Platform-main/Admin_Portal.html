@@ -1,0 +1,123 @@
+<html>
+<head>
+    <title>Admin Portal</title>
+</head>
+<link rel="stylesheet" href="CSS/Admin_Portal.css">
+<link rel="stylesheet" href="CSS/CommonCSS.css">
+<body>
+    <div id="Top_Bar"> <h2 style="text-align:center ; padding-top: 15px;"> ADMIN PORTAL </h2></div>
+    <div id="Welcome_box">
+        <table id="logout_box_table">
+            <tr><td> <img src="GUI_Resources/user_ui2.png" height="40px"> </td> <td> <p id="logged_in_as"></p> </td>  <td> <button id="Logout_btn" style = " width: 80px ; height: 30px ;">Logout</button> </td>  </tr>
+        </table>
+    </div>
+
+    <section>
+        <div class="leaf">
+            <div> <img src="http://www.pngmart.com/files/1/Fall-Autumn-Leaves-Transparent-PNG.png" height="75px"
+                    width="75px"></img></div>
+            <div><img src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Pictures-Collage-PNG.png" height="75px"
+                    width="75px"></img></div>
+            <div> <img src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Clip-Art-PNG.png" height="75px"
+                    width="75px"></img></div>
+            <div><img src="http://www.pngmart.com/files/1/Green-Leaves-PNG-File.png" height="75px" width="75px"></img>
+            </div>
+            <div> <img src="http://www.pngmart.com/files/1/Transparent-Autumn-Leaves-Falling-PNG.png" height="75px"
+                    width="75px"></img></div>
+            <div> <img src="http://www.pngmart.com/files/1/Realistic-Autumn-Fall-Leaves-PNG.png" height="75px"
+                    width="75px"></div>
+            <div><img src="http://www.pngmart.com/files/1/Fall-Autumn-Leaves-Transparent-PNG.png" height="75px" width="75px"></div>
+
+        </div>
+
+        <div class="leaf leaf1">
+            <div> <img src="http://www.pngmart.com/files/1/Fall-Autumn-Leaves-Transparent-PNG.png" height="75px"
+                    width="75px"></img></div>
+            <div><img src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Pictures-Collage-PNG.png" height="75px"
+                    width="75px"></img></div>
+            <div> <img src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Clip-Art-PNG.png" height="75px"
+                    width="75px"></img></div>
+            <div><img src="http://www.pngmart.com/files/1/Green-Leaves-PNG-File.png" height="75px" width="75px"></img>
+            </div>
+            <div> <img src="http://www.pngmart.com/files/1/Transparent-Autumn-Leaves-Falling-PNG.png" height="75px"
+                    width="75px"></img></div>
+            <div> <img src="http://www.pngmart.com/files/1/Realistic-Autumn-Fall-Leaves-PNG.png" height="75px"
+                    width="75px"></div>
+            <div><img src="http://www.pngmart.com/files/1/Fall-Autumn-Leaves-Transparent-PNG.png" height="75px" width="75px"></div>
+
+        </div>
+
+        <div class="leaf leaf2">
+            <div> <img src="http://www.pngmart.com/files/1/Fall-Autumn-Leaves-Transparent-PNG.png" height="75px"
+                    width="75px"></img></div>
+            <div><img src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Pictures-Collage-PNG.png" height="75px"
+                    width="75px"></img></div>
+            <div> <img src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Clip-Art-PNG.png" height="75px"
+                    width="75px"></img></div>
+            <div><img src="http://www.pngmart.com/files/1/Green-Leaves-PNG-File.png" height="75px" width="75px"></img>
+            </div>
+
+            <div> <img src="http://www.pngmart.com/files/1/Transparent-Autumn-Leaves-Falling-PNG.png" height="75px"
+                    width="75px"></img></div>
+            <div> <img src="http://www.pngmart.com/files/1/Realistic-Autumn-Fall-Leaves-PNG.png" height="75px"
+                    width="75px"></div>
+            <div><img src="http://www.pngmart.com/files/1/Fall-Autumn-Leaves-Transparent-PNG.png" height="75px" width="75px"></div>
+
+        </div>
+    </section>
+
+    <div id="table_divs">
+        <table class="Student_table" id="Student_table">
+           <tr><th colspan="5">Students</th></tr>
+            <tr> <th>Student name</th> <th> Password </th> <th> User_ID </th> <th style="width: 80px;"> Edit </th> <th style="width: 80px;" > Delete </th> </tr>
+        </table>
+        &nbsp;
+        <table class="Problem_Setter_table" id="Problem_Setter_table">
+            <tr><th colspan="5">Problem Setters</th></tr>
+            <tr><th>Problem Setter name</th> <th> Password </th> <th> User_ID </th> <th style="width: 80px;"> Edit </th> <th style="width: 80px;" > Delete </th> </tr>
+            </table>
+        </table>
+    </div>
+
+    <div id="Load_overlay" hidden>
+        <img src="GUI_Resources/Loading.gif" alt="" id="loading_img">
+    </div>
+
+    <div id="Overlay" hidden>
+        <div id="confirmation_div">
+            <table id="confirmation_table">
+                <tr><td colspan="2" id="">Do you really want to delete ?</td></tr>
+                <tr><td><button id="confirmation_ans_no">NO</button></td><td><button id="confirmation_ans_yes">YES</button></td></tr>
+            </table>
+        </div>
+    </div>
+
+    <div id="Current_edit_div">
+            <table id="Current_Edit_table">
+                <tr> <td style="text-align: center;"> <img src="GUI_Resources/Edit_Icon.png" alt="" width="40px"> </td> <td style="text-align: left;" colspan="2"> <b> CURRENT EDIT </b></td></tr>
+                <tr><td style="text-align: center;"> <b>User_Type :</b> </td> <td> <input disabled type="radio" name="input_as" id="input_as_Student" value="Students"> Student <input disabled type="radio" name="input_as" id="input_as_Problem_Setter" value="Problem_Setters"> Problem_Setter</td></tr>
+                <tr><td><b>Name</b></td><td><input type="text" id="current_edit_name"></td></tr>
+                <tr><td> <b>Password</b></td><td><input type="text" id="current_edit_password"></td></tr>
+                <tr><td style="text-align: center;"  colspan="2"><button id="Update_btn">Update</button></td></tr>
+            </table>
+    </div>
+
+    <div id="Admin_Banner_div">
+        <img src="GUI_Resources/AdminUI.png" alt="" width="150px">
+    </div>
+
+    <table id="Register_User_table">
+        <tr><td style="text-align: center;" width="20px"><img src="GUI_Resources/plus.png" alt="" width="40px"></td><td style="text-align: left;"> <b>REGISTER USER</b></td></tr>
+        <tr><td colspan="2" style="text-align: center;"> <b>User_Type :</b> <input type="radio" name="input_as" id="register_as_Student" checked> Student <input type="radio" name="input_as" id="register_as_Problem_Setter"> Problem_Setter</td></tr>
+        <tr><td colspan="2"style="text-align: center;"> User ID : <input type="number" id="input_user_id"></td></tr>
+        <tr><td colspan="2" style="text-align: center;">Name : <input type="text" id="input_name"></td></tr>
+        <tr><td colspan="2" style="text-align: center;">Password : <input type="password" id="input_password"></td></tr>
+        <tr><td colspan="2" style="text-align: center;"><button id="Register_btn"> Register </button></td></tr>
+    </table>
+
+
+    <!-- importing js cookie CDN library -->
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <script type="module" src="Scripts/Admin_Portal.js"></script>
+</body>
+</html>

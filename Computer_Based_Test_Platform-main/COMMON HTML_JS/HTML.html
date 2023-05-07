@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <title>Page title</title>
+</head>
+
+<body>
+    <link rel="stylesheet" href="CSS/CommonCSS.css">
+    <link rel="stylesheet" href="CSS/Create_Test.css">
+    <div id="Top_Bar">
+        <h2 style="text-align:center ; padding-top: 15px;"> heading </h2>
+    </div>
+
+    <div id="Welcome_box">
+        <table id="logout_box_table">
+            <tr>
+                <td> <img src="GUI_Resources/user_ui2.png" height="40px"> </td>
+                <td>
+                    <p id="logged_in_as"></p>
+                </td>
+                <td> <button id="Logout_btn" style=" width: 80px ; height: 30px ;">Logout</button> </td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- importing js cookie CDN library -->
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <script type="module" src="Scripts/Create_Test.js"></script>
+</body>
+
+</html>

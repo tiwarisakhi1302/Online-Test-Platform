@@ -1,0 +1,136 @@
+<html>
+<head>
+    <title>Create Test</title>
+</head>
+<body>
+    <link rel="stylesheet" href="CSS/CommonCSS.css">
+    <link rel="stylesheet" href="CSS/Create_Test.css">
+    <div id="Top_Bar"> <h2 style="text-align:center ; padding-top: 15px;"> CREATE TEST </h2></div>
+
+    <div id="Welcome_box">
+        <table id="logout_box_table">
+            <tr><td> <img src="GUI_Resources/user_ui2.png" height="40px"> </td> <td> <p id="logged_in_as"></p> </td>  <td> <button id="Logout_btn" style = " width: 80px ; height: 30px ;">Logout</button> </td>  </tr>
+        </table>
+    </div>
+
+    <div id="Load_overlay" hidden>
+        <img src="GUI_Resources/Loading.gif" alt="" id="loading_img">
+    </div>
+
+    <section>
+        <div class="leaf">
+            <div> <img src="http://www.pngmart.com/files/1/Fall-Autumn-Leaves-Transparent-PNG.png" height="75px"
+                    width="75px"></img></div>
+            <div><img src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Pictures-Collage-PNG.png" height="75px"
+                    width="75px"></img></div>
+            <div> <img src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Clip-Art-PNG.png" height="75px"
+                    width="75px"></img></div>
+            <div><img src="http://www.pngmart.com/files/1/Green-Leaves-PNG-File.png" height="75px" width="75px"></img>
+            </div>
+            <div> <img src="http://www.pngmart.com/files/1/Transparent-Autumn-Leaves-Falling-PNG.png" height="75px"
+                    width="75px"></img></div>
+            <div> <img src="http://www.pngmart.com/files/1/Realistic-Autumn-Fall-Leaves-PNG.png" height="75px"
+                    width="75px"></div>
+            <div><img src="http://www.pngmart.com/files/1/Fall-Autumn-Leaves-Transparent-PNG.png" height="75px" width="75px"></div>
+
+        </div>
+
+        <div class="leaf leaf1">
+            <div> <img src="http://www.pngmart.com/files/1/Fall-Autumn-Leaves-Transparent-PNG.png" height="75px"
+                    width="75px"></img></div>
+            <div><img src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Pictures-Collage-PNG.png" height="75px"
+                    width="75px"></img></div>
+            <div> <img src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Clip-Art-PNG.png" height="75px"
+                    width="75px"></img></div>
+            <div><img src="http://www.pngmart.com/files/1/Green-Leaves-PNG-File.png" height="75px" width="75px"></img>
+            </div>
+            <div> <img src="http://www.pngmart.com/files/1/Transparent-Autumn-Leaves-Falling-PNG.png" height="75px"
+                    width="75px"></img></div>
+            <div> <img src="http://www.pngmart.com/files/1/Realistic-Autumn-Fall-Leaves-PNG.png" height="75px"
+                    width="75px"></div>
+            <div><img src="http://www.pngmart.com/files/1/Fall-Autumn-Leaves-Transparent-PNG.png" height="75px" width="75px"></div>
+
+        </div>
+
+        <div class="leaf leaf2">
+            <div> <img src="http://www.pngmart.com/files/1/Fall-Autumn-Leaves-Transparent-PNG.png" height="75px"
+                    width="75px"></img></div>
+            <div><img src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Pictures-Collage-PNG.png" height="75px"
+                    width="75px"></img></div>
+            <div> <img src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Clip-Art-PNG.png" height="75px"
+                    width="75px"></img></div>
+            <div><img src="http://www.pngmart.com/files/1/Green-Leaves-PNG-File.png" height="75px" width="75px"></img>
+            </div>
+
+            <div> <img src="http://www.pngmart.com/files/1/Transparent-Autumn-Leaves-Falling-PNG.png" height="75px"
+                    width="75px"></img></div>
+            <div> <img src="http://www.pngmart.com/files/1/Realistic-Autumn-Fall-Leaves-PNG.png" height="75px"
+                    width="75px"></div>
+            <div><img src="http://www.pngmart.com/files/1/Fall-Autumn-Leaves-Transparent-PNG.png" height="75px" width="75px"></div>
+
+        </div>
+    </section>
+
+    <div id="Description_Overlay" hidden>
+        <div id="Question_pallet_table_div">
+            <table id="Question_pallet_table">
+                <tr> <td colspan="2" style="text-align: right;"> <button id="close_pallet_btn" style="border: 0px; background-color:rgba(0, 255, 255, 0);"> <img src="GUI_Resources/cancel.png" alt=""> </button> </td> </tr>
+                <tr><td>Question ID : </td> <td> <span style="resize: none;" id="Question_ID_val"></span> </td></tr>
+                <tr><td>Difficulty : </td> <td> <span id="difficulty_val"></span> </td></tr>
+                <tr><td>Authored By : </td> <td> <span id="authored_by"></span> </td></tr>
+                <tr><td>Question Description : </td> <td> <textarea style="resize: none;" id="Question_desc" cols="60" rows="10" disabled></textarea> </td></tr>
+                <tr><td>Option 1 value : </td> <td> <textarea style="resize: none;" id="opt_1_val" cols="60" rows="3" disabled></textarea> </td></tr>
+                <tr><td>Option 2 value : </td> <td> <textarea style="resize: none;" id="opt_2_val"  cols="60" rows="3" disabled></textarea> </td></tr>
+                <tr><td>Option 3 value : </td> <td> <textarea style="resize: none;" id="opt_3_val"  cols="60" rows="3" disabled></textarea> </td></tr>
+                <tr><td>Option 4 value : </td> <td> <textarea style="resize: none;" id="opt_4_val"  cols="60" rows="3" disabled></textarea> </td></tr>
+                <tr><td>correct option : </td> <td> <span style="resize: none;" id="correct_opt"></span> </td></tr>
+                <tr><td>Marks alloted : </td> <td> <input type="number" id="Marks_alloted" value="4"> </td></tr>
+                <tr><td colspan="2" style="text-align: center;"> <button id="add_to_test_btn">Add to Test</button> </td></tr>
+            </table>
+        </div>
+    </div>
+
+
+
+    <button id="fetch_question_bank">Fetch Question Bank</button>
+
+    <div id="Create_Test_div">
+        <table id="Create_Test_Table">
+            <tr> <td colspan="2" style="text-align: center;">Create Test</td> </tr>
+            <tr><td>Created By : </td> <td> <span id="Name_of_Problem_setter"></span> </td> </tr>
+            <tr><td> Name of test : </td> <td> <input type="text" id="test_name"> </td></tr>
+            <tr> <td> Duration (minutes) : </td>  <td> <input type="number" id="test_duration" value="60"> </td> </tr>
+            <tr><td>No of questions : </td><td><span id="no_of_questions">0</span></td></tr>
+            <tr><td>Max Marks : </td><td> <span id="max_marks">0</span> </td></tr>
+        </table>
+    </div>
+
+    <div id="Question_to_add_MCQ_div">
+        <table id="Question_to_add_MCQ_table_Autometa">
+            <tr style="background-color: rgba(98, 98, 98, 0.681); height: 30px;"><td colspan="2" style="text-align: center;"><b>Verified Question Bank Automata</b></td></tr>
+            <tr style="background-color: rgba(98, 98, 98, 0.375); height: 20px;" ><td>Question ID</td><td width="50px">Add</td></tr>
+        </table>
+        <table id="Question_to_add_MCQ_table_OS">
+            <tr style="background-color: rgba(98, 98, 98, 0.681); height: 30px;"><td colspan="2" style="text-align: center;"><b>Verified Question Bank OS</b></td></tr>
+            <tr style="background-color: rgba(98, 98, 98, 0.375); height: 20px;" ><td>Question ID</td><td width="50px">Add</td></tr>
+        </table>
+        <table id="Question_to_add_MCQ_table_Algorithm">
+            <tr style="background-color: rgba(98, 98, 98, 0.681); height: 30px;"><td colspan="2" style="text-align: center;"><b>Verified Question Bank Algorithm</b></td></tr>
+            <tr style="background-color: rgba(98, 98, 98, 0.375); height: 20px;" ><td>Question ID</td><td width="50px">Add</td></tr>
+        </table>
+    </div>
+
+    <div id="Question_Added_table_div">
+        <table id="Question_Added_table">
+            <tr style="background-color: rgba(98, 98, 98, 0.681); height: 30px;" ><td colspan="2"><b>Questions Added</b></td></tr>
+            <tr style="background-color: rgba(98, 98, 98, 0.375); height: 20px;" ><td>Questions ID</td> <td>Marks</td></tr>
+        </table>
+    </div>
+
+    <button id="create_Test"> Create Test </button>
+
+    <!-- importing js cookie CDN library -->
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+<script type="module" src="Scripts/Create_Test.js"></script>
+</body>
+</html>
