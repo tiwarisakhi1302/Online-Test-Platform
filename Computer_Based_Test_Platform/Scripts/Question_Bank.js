@@ -281,7 +281,7 @@ Question_Pallet.Difficulty_Slider.oninput = function() //function called when sl
    Question_Pallet.current_difficulty_span.innerHTML = Question_Pallet.Difficulty_Slider.value;
 }
 
-function Delete_Data() //function called when we press yes to delete confimation
+function Delete_Data() //function called when we press yes to delete confirmation
 {
     confirmation_overlay.hidden  = true;
     var path_directory = "Question_Bank/MCQs/" + Question_Pallet.Cur_Question_ID.innerHTML;
@@ -295,9 +295,9 @@ function Delete_Data() //function called when we press yes to delete confimation
         });
 }
 
-Question_Pallet.Upvote_Btn.onclick = function() //function called when upvote buttton is clicked
+Question_Pallet.Upvote_Btn.onclick = function() //function called when upvote button is clicked
 {
-    if(Cookies.get(Question_Pallet.Cur_Question_ID.innerHTML) == undefined) //Means He has not upvoted or downvoted
+    if(Cookies.get(Question_Pallet.Cur_Question_ID.innerHTML) == undefined) //Means He has not up-voted or down-voted
     {
         console.log("Upvote " + Question_Pallet.Cur_Question_ID.innerHTML);
         var path_directory = "Question_Bank/MCQs/" + Question_Pallet.Cur_Question_ID.innerHTML;

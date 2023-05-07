@@ -7,8 +7,11 @@
 <body>
         <link rel="stylesheet" href="CSS/CommonCSS.css">
         <link rel="stylesheet" href="CSS/Add_Question.css">
-        <div id="Top_Bar">
+        <!-- <div id="Top_Bar">
                 <h2 style="text-align:center ; padding-top: 15px;"> ADD QUESTION </h2>
+        </div> -->
+        <div id="Nav_bar">
+                <h1> ADD QUESTION </h1>
         </div>
         <div id="Welcome_box">
                 <table id="logout_box_table">
@@ -97,7 +100,7 @@
                 </div>
         </section>
 
-        <div id="Add_Question_Pallet_Container" style="width:90%">
+        <div id="Add_Question_Pallet_Container" style="margin-left:7%; width:67%">
                 <table id="Add_Question_pallet" style="width:46%">
                         <thead>
                                 <th colspan="3" style="text-align: center;"> <img src="GUI_Resources/Question_icon.png"
@@ -118,15 +121,15 @@
                         <tr>
                                 <td>Subject : </td>
                                 <td colspan="2"> <label><input type="radio" name="choice" id="sub_Algorithm" checked> Algorithm</label>
-                                        <label><input type="radio" name="choice" id="sub_Automata"> Automata </label>
-                                        <label><input type="radio" name="choice" id="Sub_OS"> Operating System</label> </td>
+                                        &emsp;<label><input type="radio" name="choice" id="sub_Automata"> Automata </label>
+                                        &emsp;<label><input type="radio" name="choice" id="Sub_OS"> Operating System</label> </td>
                         </tr>
                         <tr>
                                 <td colspan="3">Question Description</td>
                         </tr>
                         <tr>
-                                <td colspan="3" heigth="30px"><textarea name="" id="ques_desc" style="resize: none;"
-                                                rows="6" cols="68" class="in_txt"></textarea></td>
+                                <td colspan="3" height="30px"><textarea name="" id="ques_desc" style="resize: none;"
+                                                rows="6" cols="65" class="in_txt"></textarea></td>
                         </tr>
                         <tr>
                                 <td> Option 1</td>
@@ -150,11 +153,11 @@
                         </tr>
                         <tr id="correct_ans_row">
                                 <td style="color:black"> Correct Answer : </td>
-                                <td colspan="2" style="color:black"> 
+                                <td colspan="2" style="color:black">
                                         <label><input type="radio" name="correct_opt" id="correct_opt_1" checked> option1</label>
-                                        <label><input type="radio" name="correct_opt" id="correct_opt_2"> option2 </label>
-                                        <label><input type="radio" name="correct_opt" id="correct_opt_3"> option3 </label>
-                                        <label><input type="radio" name="correct_opt" id="correct_opt_4"> option4</label> </td>
+                                        &emsp;<label><input type="radio" name="correct_opt" id="correct_opt_2"> option2 </label>
+                                        &emsp;<label><input type="radio" name="correct_opt" id="correct_opt_3"> option3 </label>
+                                        &emsp;<label><input type="radio" name="correct_opt" id="correct_opt_4"> option4</label> </td>
                         </tr>
                         <tr>
                                 <td colspan="3" style="text-align: center; padding:0;"><button class="button-77"

@@ -5,7 +5,7 @@
 {
     width: 782px;
     position: absolute;
-    left: 57%;  
+    left: 57%;
     top: 20%;
 }
 
@@ -26,7 +26,7 @@
     position: relative;
     left: 32%;
     top: 17%;
-    border: dotted black 5px; 
+    border: dotted black 5px;
 }
 #loading_img
 {
@@ -95,7 +95,7 @@
     position: absolute;
     top: 43%;
 }
- 
+
 #Load_overlay /*CSS for load overlay div */
 {
     height: 100%;
@@ -119,7 +119,7 @@
     height: 200px;
     left: 5%;
     top: 18%;
-    z-index: 1;  
+    z-index: 1;
     display: flex;
     flex-direction: column;
     min-height: 77vh;
@@ -188,11 +188,12 @@
     border-radius: 10px;
     position: absolute;
     border-style: dotted dashed solid double;
+    /* font-size:25px; */
     width: 800px;
     height: 200px;
-    left: 50%;
+    left: 64%;
     top: 18%;
-    z-index: 1;  
+    z-index: 1;
     display: flex;
     flex-direction: column;
     min-height: 77vh;
@@ -234,7 +235,7 @@
     background-color: rgba(240, 248, 255, 0.37);
 }
 
-#Questions_For_Review_table_OS 
+#Questions_For_Review_table_OS
 {
     position: absolute;
     width: 240px;
@@ -269,4 +270,21 @@
     border-width: 0px;
     text-align: center;
     background-color: rgba(240, 248, 255, 0.37);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    overflow: hidden;
+
+}
+#Nav_bar{
+    padding: 20px 0;
+    background-image: linear-gradient(92.83deg, #ff7426 0, #f93a13 100%);
+    text-align: center;
+    box-shadow: 0 0 10px 0 rgba();
+    color:azure;
 }
