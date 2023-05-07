@@ -10,6 +10,12 @@
     font-size:25px;
 }
 
+/* #user_type_id{
+    position:absolute;
+    top:10%;
+    left:70%;
+} */
+
 /* ---------------------------------------For Delete Confirmation  -------------------------------*/
 
 #Overlay  /* For Delete Confirmation overlay div */
@@ -24,23 +30,26 @@
   backdrop-filter: blur(6px);
 }
 
+
+
 #confirmation_div /* For Delete Confirmation div (that contains table ) */
 {
     position: absolute;
     top:45%;
-    left: 44%;
-    width: 12%;
-    height: 8%;
+    left: 35%;
+    width: 400px;
+    height: 140px;
     text-align: center;
     background-color: azure;
     border-radius: 25px;
+    font-size: 24px;
 }
 
 #confirmation_table /* For Delete Confirmation table that contains text and yes/no buttons */
 {
     position: absolute;
     top: 20%;
-    left: 8%;
+    left: 24%;
 }
 
 /*---------------------------------------------------------------------------------------------------------*/
@@ -158,7 +167,7 @@
 #Register_User_table td /*CSS for RegisteR User table data cell*/
 {
     /* border: solid black 2px;   */
-    
+
     padding: 20px;
 }
 
@@ -336,7 +345,7 @@ body {
 
 #Register_btn{
     margin-top:-10px;
-    
+
 }
 
 #input_user_id{
