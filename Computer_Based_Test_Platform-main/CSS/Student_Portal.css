@@ -32,4 +32,160 @@
     text-align: center;
     background-color: rgba(240, 255, 255, 0.747);
     border-radius: 25px;
+    font-size: 25px;
+    padding: 5px;
+    padding-bottom: 10px;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+body {
+  overflow: hidden;
+
+}
+
+#Nav_bar {
+  padding: 20px 0;
+
+  background-image: linear-gradient(92.83deg, #ff7426 0, #f93a13 100%);
+  /* text-align: center; */
+  box-shadow: 0 0 10px 0 rgba();
+  color: azure;
+  height:40px ;
+  display: flex;
+}
+#heading{
+  margin-left: 45%;
+  position: absolute;
+  width: 400px;
+}
+#logout_box_table {
+  position: absolute  ;
+  background-color: rgba(128, 128, 128, 0.379);
+  border: 1px solid;
+  border-radius: 10px;
+  width:240px !important;
+  height: 50px;
+  font-size: 22px;
+  right: 21px;
+  justify-content:center;
+  justify-content: space-around;
+  display:  flex;
+  flex-direction: row;
+  justify-self: flex-end;
+  margin-left: 5px;
+
+}
+#Logout_btn{
+  border-radius: 25px;
+      background-image: linear-gradient(92.83deg, #ff762663 0, #f939136a 100%);
+}
+#logged_in_as, #Logout_btn{
+  justify-self: center;
+  align-self: center;
+}
+.button-77 {
+  align-items: center;
+  appearance: none;
+  background-clip: padding-box;
+  background-color: initial;
+  background-image: none;
+  border-style: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  flex-direction: row;
+  flex-shrink: 0;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  justify-content: center;
+  line-height: 24px;
+  margin: 3%;
+  min-height: 64px;
+  outline: none;
+  overflow: visible;
+  padding: 19px 26px;
+  pointer-events: auto;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  width: auto;
+  word-break: keep-all;
+  z-index: 0;
+}
+
+@media (min-width: 768px) {
+  .button-77 {
+    padding: 19px 32px;
+  }
+}
+
+.button-77:before,
+.button-77:after {
+  border-radius: 80px;
+}
+
+.button-77:before {
+  background-color: rgba(249, 58, 19, .32);
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -2;
+}
+
+.button-77:after {
+  background-color: initial;
+  background-image: linear-gradient(92.83deg, #ff7426 0, #f93a13 100%);
+  bottom: 4px;
+  content: "";
+  display: block;
+  left: 4px;
+  overflow: hidden;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  transition: all 100ms ease-out;
+  z-index: -1;
+}
+
+.button-77:hover:not(:disabled):after {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  transition-timing-function: ease-in;
+}
+
+.button-77:active:not(:disabled) {
+  color: #ccc;
+}
+
+.button-77:active:not(:disabled):after {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), linear-gradient(92.83deg, #ff7426 0, #f93a13 100%);
+  bottom: 4px;
+  left: 4px;
+  right: 4px;
+  top: 4px;
+}
+
+.button-77:disabled {
+  cursor: default;
+  opacity: .24;
 }

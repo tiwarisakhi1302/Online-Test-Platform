@@ -93,7 +93,7 @@ function add_to_table(id) //function inserts data into table
 
         var btn_id = "test," + value.Test_ID;
 
-        Link_Cell.innerHTML = "<Button id=" + btn_id + "> Take Test </Button>";
+        Link_Cell.innerHTML = "<Button class='button-77' id=" + btn_id + "> Take Test </Button>";
         document.getElementById(btn_id).addEventListener('click',goto_Test.bind(null,value.Test_ID));
     }
 }

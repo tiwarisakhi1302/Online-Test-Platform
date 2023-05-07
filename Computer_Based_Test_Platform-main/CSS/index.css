@@ -7,10 +7,14 @@
    left: 36%;
    top: 30%;
    width: 700px;
-   height: 350px;
+   height: 370px;
    padding: 20px;
    color: #fff;
    /* background-color: rgba(255, 255, 255, 0.493); */
+}
+
+#submit_btn{
+  margin:auto;
 }
 
 
@@ -59,12 +63,10 @@
     font-size: larger;
 }
 
-/* #login_button
-/* {
-    height: 30px;
-    width: 100px;
-    border-radius: 10px;
-} */
+#login_button
+{
+  margin-bottom: 40px;
+}
 
 button {
     --c:  #E95A49; /* the color*/
@@ -98,7 +100,7 @@ button {
     font-weight: bold;
     border: none;
     color: white;
-    margin-left: 150px;
+    margin-left: 110px;
   }
 
 #loading_img  /*CSS for loading image */
@@ -118,4 +120,25 @@ button {
     top: 0;
     background-color: rgba(7, 7, 7, 0.55); /* Black w/opacity */
     backdrop-filter: blur(6px);
+}
+#choose_user{
+  display:flex;
+  gap: 1;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+
+}
+body{
+  overflow: hidden;
+
+}
+#Nav_bar{
+  padding: 20px 0;
+  background-image: linear-gradient(92.83deg, #ff7426 0, #f93a13 100%);
+  text-align: center;
+  box-shadow: 0 0 10px 0 rgba();
+  color:azure;
 }

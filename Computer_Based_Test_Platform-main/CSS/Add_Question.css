@@ -1,9 +1,14 @@
+body{
+  overflow-y: visible;
+}
+
 #Add_Question_Pallet_Container
 {
     /* border: solid black 2px; */
-    /* width: 782px; */
+
+    width: 800px;
     position: absolute;
-    left: 36%;
+    left: 26%;
     top: 11%;
     /* border: dotted black 5px;  */
 }
@@ -11,6 +16,10 @@
 /* #Submit_Question{
     margin:3%;
 } */
+
+.in_txt{
+  font-size:20px;
+}
 
 
 /* CSS */

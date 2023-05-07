@@ -1,7 +1,8 @@
 #Create_Test_Table
 {
     background-color: rgba(240, 248, 255, 0.582);
-    border: solid black 3px; 
+    border: solid black 3px;
+    font-size:30px;
 }
 
 #Create_Test_div
@@ -22,17 +23,17 @@
 #fetch_question_bank /* For Fetch Question Bank Button*/
 {
     position: absolute;
-    left: 10%;
-    top: 15%;
+    left: 8.7%;
+    top: 8%;
     width: 200px;
-    height: 50px;
+    height: 78px;
     border-radius: 20px;
 }
 
 #Question_Added_table
 {
     background-color: rgba(240, 248, 255, 0.582);
-    border: solid black 3px; 
+    border: solid black 3px;
     width: 400px;
     text-align: center;
 }
@@ -46,7 +47,7 @@
     height: 200px;
     margin-left: 2%;
     margin-top: 8%;
-    z-index: 1;  
+    z-index: 1;
     display: flex;
     flex-direction: column;
     min-height: 57vh;
@@ -54,13 +55,14 @@
     background-color:#e8e0d77e
 }
 
+
 #Question_to_add_MCQ_table
 {
     position: relative;
     left: 5%;
     top : 5%;
     background-color: rgba(240, 248, 255, 0.582);
-    border: solid black 3px; 
+    border: solid black 3px;
     width: 400px;
     text-align: center;
 }
@@ -72,7 +74,7 @@
     top: 43%;
     left: 43%;
 }
- 
+
 #Load_overlay /*CSS for load overlay div */
 {
     height: 100%;
@@ -88,7 +90,7 @@
 #Question_pallet_table
 {
     background-color: rgba(240, 248, 255, 0.582);
-    border: solid black 3px; 
+    border: solid black 3px;
 }
 
 #Question_pallet_table_div
@@ -98,13 +100,13 @@
     left: 29%;
 }
 
-.add_question_btn
+/* .add_question_btn
 {
     background-color:rgba(0, 255, 255, 0);
     border: 0px;
-}
+} */
 
-#Description_Overlay /*Overlay for Displaying details of the seleted question */
+#Description_Overlay /*Overlay for Displaying details of the selected question */
 {
     height: 100%;
     width: 100%;
@@ -121,8 +123,127 @@
 {
     position: absolute;
     top: 30%;
-    left: 45%;
+    left: 44.5%;
     width: 200px;
     height: 50px;
     border-radius: 30px;
+}
+
+
+.button-77 {
+    align-items: center;
+    appearance: none;
+    background-clip: padding-box;
+    background-color: initial;
+    background-image: none;
+    border-style: none;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    flex-direction: row;
+    flex-shrink: 0;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    justify-content: center;
+    line-height: 24px;
+    margin: 3%;
+    min-height: 64px;
+    outline: none;
+    overflow: visible;
+    padding: 19px 26px;
+    pointer-events: auto;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    width: auto;
+    word-break: keep-all;
+    z-index: 0;
+}
+
+  @media (min-width: 768px) {
+    .button-77 {
+      padding: 19px 32px;
+    }
+  }
+
+  .button-77:before,
+  .button-77:after {
+    border-radius: 80px;
+  }
+
+  .button-77:before {
+    background-color: rgba(249, 58, 19, .32);
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -2;
+  }
+
+  .button-77:after {
+    background-color: initial;
+    background-image: linear-gradient(92.83deg, #ff7426 0, #f93a13 100%);
+    bottom: 4px;
+    content: "";
+    display: block;
+    left: 4px;
+    overflow: hidden;
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    transition: all 100ms ease-out;
+    z-index: -1;
+  }
+
+  .button-77:hover:not(:disabled):after {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    transition-timing-function: ease-in;
+  }
+
+  .button-77:active:not(:disabled) {
+    color: #ccc;
+  }
+
+  .button-77:active:not(:disabled):after {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), linear-gradient(92.83deg, #ff7426 0, #f93a13 100%);
+    bottom: 4px;
+    left: 4px;
+    right: 4px;
+    top: 4px;
+  }
+
+  .button-77:disabled {
+    cursor: default;
+    opacity: .24;
+  }
+
+  *{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    overflow: hidden;
+
+}
+#Nav_bar{
+    padding: 20px 0;
+    background-image: linear-gradient(92.83deg, #ff7426 0, #f93a13 100%);
+    text-align: center;
+    box-shadow: 0 0 10px 0 rgba();
+    color:azure;
 }

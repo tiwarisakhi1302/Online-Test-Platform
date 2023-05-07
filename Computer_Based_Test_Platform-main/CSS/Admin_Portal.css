@@ -7,6 +7,7 @@
     text-align: center;
     background-color: rgba(240, 248, 255, 0.582);
     border-radius: 30px;
+    font-size:25px;
 }
 
 /* ---------------------------------------For Delete Confirmation  -------------------------------*/
@@ -53,6 +54,7 @@
     text-align: center;
     background-color: rgba(240, 248, 255, 0.3);
     border-radius: 30px;
+    font-size:25px;
 }
 
 .Student_table tr /*CSS for Student table Rows */
@@ -64,6 +66,7 @@
     text-align: center;
     border-radius: 5px;
     background-color: rgba(240, 248, 255, 0.37);
+    font-size:20px;
 }
 
 .Problem_Setter_table tr  /*CSS for Problem Setter Table Rows */
@@ -75,6 +78,7 @@
     text-align: center;
     border-radius: 5px;
     background-color: rgba(240, 248, 255, 0.37);
+    font-size:20px;
 }
 
 /*--------------------------------------------CSS for Loading Overlay-----------------------------------------*/
@@ -84,7 +88,7 @@
     top: 43%;
     left: 43%;
 }
- 
+
 #Load_overlay /*CSS for load overlay div */
 {
     height: 100%;
@@ -125,8 +129,8 @@
     left: 75%;
     top: 25%;
     background-color: rgba(240, 248, 255, 0.3);
-    border: dotted black 3px; 
-    border-radius: 15px;   
+    border: dotted black 3px;
+    border-radius: 15px;
 }
 
 #Current_Edit_table  /*CSS for Current edit table*/
@@ -141,7 +145,7 @@
 #Current_Edit_table td /*CSS for Current edit table data cell*/
 {
     /* border: solid black 1px;  */
-    padding: 2%; 
+    padding: 2%;
 }
 
 #Register_User_table td /*CSS for RegisteR User table data cell*/
@@ -156,6 +160,23 @@
     position: absolute;
     top: 55%;
     left: 76%;
-    border: dotted black 3px; 
+    border: dotted black 3px;
     border-radius: 30px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    overflow: hidden;
+
+}
+#Nav_bar{
+    padding: 20px 0;
+    background-image: linear-gradient(92.83deg, #ff7426 0, #f93a13 100%);
+    text-align: center;
+    box-shadow: 0 0 10px 0 rgba();
+    color:azure;
 }

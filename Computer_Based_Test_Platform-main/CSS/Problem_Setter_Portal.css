@@ -122,6 +122,23 @@
   opacity: .24;
 }
 
+*{
+  margin: 0;
+  padding: 0;
+
+}
+body{
+  overflow: hidden;
+
+}
+#Nav_bar{
+  padding: 20px 0;
+  background-image: linear-gradient(92.83deg, #ff7426 0, #f93a13 100%);
+  text-align: center;
+  box-shadow: 0 0 10px 0 rgba();
+  color:azure;
+}
+
 /* #Add_Question
 {
     border-radius: 20px;
